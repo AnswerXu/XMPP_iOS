@@ -1,0 +1,1208 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		34344A371F9DA75200F3CD21 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34344A361F9DA75200F3CD21 /* SettingViewController.swift */; };
+		34344A391F9DBE6200F3CD21 /* SettingTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34344A381F9DBE6200F3CD21 /* SettingTableView.swift */; };
+		34344A3B1F9DBFB600F3CD21 /* SettingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34344A3A1F9DBFB600F3CD21 /* SettingTableViewCell.swift */; };
+		343E87671F95B06C007AF94F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343E87661F95B06C007AF94F /* AppDelegate.swift */; };
+		343E876C1F95B0CA007AF94F /* XMPPNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343E87691F95B0CA007AF94F /* XMPPNavigationController.swift */; };
+		343E876D1F95B0CA007AF94F /* XMPPTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343E876A1F95B0CA007AF94F /* XMPPTabBarController.swift */; };
+		343E876F1F95B141007AF94F /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 343E876E1F95B141007AF94F /* Info.plist */; };
+		343E87731F95CE5F007AF94F /* ChatInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343E87721F95CE5F007AF94F /* ChatInputView.swift */; };
+		343E87751F95DB1D007AF94F /* ChatInputViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343E87741F95DB1D007AF94F /* ChatInputViewManager.swift */; };
+		34643F331F8DE9FD00F58FE0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34643F311F8DE9FD00F58FE0 /* Main.storyboard */; };
+		34643F351F8DE9FD00F58FE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34643F341F8DE9FD00F58FE0 /* Assets.xcassets */; };
+		34643F381F8DE9FD00F58FE0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34643F361F8DE9FD00F58FE0 /* LaunchScreen.storyboard */; };
+		34643F431F8DE9FD00F58FE0 /* XMPP_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34643F421F8DE9FD00F58FE0 /* XMPP_iOSTests.swift */; };
+		34643F4E1F8DE9FD00F58FE0 /* XMPP_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34643F4D1F8DE9FD00F58FE0 /* XMPP_iOSUITests.swift */; };
+		34643F661F8E060F00F58FE0 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34643F641F8E060F00F58FE0 /* LoginViewController.swift */; };
+		34643F671F8E060F00F58FE0 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34643F651F8E060F00F58FE0 /* LoginViewController.xib */; };
+		34643F6A1F8E061E00F58FE0 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34643F681F8E061E00F58FE0 /* RegisterViewController.swift */; };
+		34643F6B1F8E061E00F58FE0 /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34643F691F8E061E00F58FE0 /* RegisterViewController.xib */; };
+		34643F6F1F8E0B8900F58FE0 /* XMPPConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34643F6D1F8E0B8900F58FE0 /* XMPPConfig.swift */; };
+		34643F701F8E0B8900F58FE0 /* XMPPManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34643F6E1F8E0B8900F58FE0 /* XMPPManager.swift */; };
+		34659B331F975C720060E34C /* AddFriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34659B321F975C710060E34C /* AddFriendsViewController.swift */; };
+		34659B361F9760CD0060E34C /* AddFriendsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34659B351F9760CD0060E34C /* AddFriendsTableViewCell.swift */; };
+		346853931F99A17D0060C6FC /* NewFriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346853921F99A17D0060C6FC /* NewFriendsViewController.swift */; };
+		346853951F99A33F0060C6FC /* NewFriendsTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346853941F99A33F0060C6FC /* NewFriendsTableView.swift */; };
+		346853971F99A5B00060C6FC /* NewFriendsSection2TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346853961F99A5B00060C6FC /* NewFriendsSection2TableViewCell.swift */; };
+		346853991F99AC370060C6FC /* NewFriendsSection1TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346853981F99AC370060C6FC /* NewFriendsSection1TableViewCell.swift */; };
+		3468539B1F99DC930060C6FC /* MeTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3468539A1F99DC930060C6FC /* MeTableView.swift */; };
+		3468539D1F99DE700060C6FC /* MeSection0TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3468539C1F99DE700060C6FC /* MeSection0TableViewCell.swift */; };
+		3468539F1F99E0430060C6FC /* MeOtherTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3468539E1F99E0430060C6FC /* MeOtherTableViewCell.swift */; };
+		346853A21F99E0FB0060C6FC /* MeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346853A11F99E0FB0060C6FC /* MeModel.swift */; };
+		346853A41F99FE4F0060C6FC /* DiscoverTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346853A31F99FE4F0060C6FC /* DiscoverTableView.swift */; };
+		346853A61F9A00820060C6FC /* DiscoverTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346853A51F9A00820060C6FC /* DiscoverTableViewCell.swift */; };
+		346853A91F9A08460060C6FC /* DiscoverModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346853A81F9A08460060C6FC /* DiscoverModel.swift */; };
+		347771041F96F62B00654A42 /* ChatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347771031F96F62B00654A42 /* ChatModel.swift */; };
+		34991E561F8F3931000F22D8 /* FriendsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34991E551F8F3931000F22D8 /* FriendsListViewController.swift */; };
+		34991E581F8F3960000F22D8 /* FriendsListTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34991E571F8F3960000F22D8 /* FriendsListTableView.swift */; };
+		34991E5A1F8F3B34000F22D8 /* FriendsListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34991E591F8F3B34000F22D8 /* FriendsListTableViewCell.swift */; };
+		34E9C9CC1F944BC700D05B8B /* XMPPConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E9C9CB1F944BC700D05B8B /* XMPPConstant.swift */; };
+		34E9C9CE1F94505D00D05B8B /* UIView+Frame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E9C9CD1F94505D00D05B8B /* UIView+Frame.swift */; };
+		34E9C9D01F9458A700D05B8B /* ChooseRootControllerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E9C9CF1F9458A700D05B8B /* ChooseRootControllerHelper.swift */; };
+		34E9C9D91F945B6900D05B8B /* ChatListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E9C9D81F945B6900D05B8B /* ChatListViewController.swift */; };
+		34E9C9E21F94604300D05B8B /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E9C9E11F94604300D05B8B /* DiscoverViewController.swift */; };
+		34E9C9E41F94605900D05B8B /* MeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E9C9E31F94605900D05B8B /* MeViewController.swift */; };
+		34E9C9E71F946AE700D05B8B /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E9C9E61F946AE700D05B8B /* UIColor+Extension.swift */; };
+		34E9C9EC1F94A48900D05B8B /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E9C9EB1F94A48900D05B8B /* ChatViewController.swift */; };
+		34E9C9EE1F94C72800D05B8B /* ChatTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E9C9ED1F94C72800D05B8B /* ChatTableView.swift */; };
+		34E9C9F01F94C74900D05B8B /* ChatLeftTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E9C9EF1F94C74900D05B8B /* ChatLeftTableViewCell.swift */; };
+		34E9C9F21F94C75C00D05B8B /* ChatRightTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E9C9F11F94C75C00D05B8B /* ChatRightTableViewCell.swift */; };
+		7A0CBBE4845D3BBEFADD94C8 /* Pods_XMPP_iOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D11258B604827846B5E4F71 /* Pods_XMPP_iOSUITests.framework */; };
+		A685C53740ACC90D3C5BF47E /* Pods_XMPP_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F504C24A36DCFEA829795DB /* Pods_XMPP_iOSTests.framework */; };
+		FEE23DAF04BA4BF514E6ACD7 /* Pods_XMPP_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF6C75DE0F321BFB82163122 /* Pods_XMPP_iOS.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		34643F3F1F8DE9FD00F58FE0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 34643F221F8DE9FD00F58FE0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 34643F291F8DE9FD00F58FE0;
+			remoteInfo = XMPP_iOS;
+		};
+		34643F4A1F8DE9FD00F58FE0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 34643F221F8DE9FD00F58FE0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 34643F291F8DE9FD00F58FE0;
+			remoteInfo = XMPP_iOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0B6CB96E57323DD4794084D1 /* Pods-XMPP_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XMPP_iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XMPP_iOS/Pods-XMPP_iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		0E74BADBF366774A0A23A058 /* Pods-XMPP_iOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XMPP_iOSUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XMPP_iOSUITests/Pods-XMPP_iOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		0F504C24A36DCFEA829795DB /* Pods_XMPP_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XMPP_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AED69CE080143F711215A8B /* Pods-XMPP_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XMPP_iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-XMPP_iOS/Pods-XMPP_iOS.release.xcconfig"; sourceTree = "<group>"; };
+		1E984883DD82B0BD7A3E9C19 /* Pods-XMPP_iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XMPP_iOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XMPP_iOSTests/Pods-XMPP_iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		34344A361F9DA75200F3CD21 /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		34344A381F9DBE6200F3CD21 /* SettingTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingTableView.swift; sourceTree = "<group>"; };
+		34344A3A1F9DBFB600F3CD21 /* SettingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingTableViewCell.swift; sourceTree = "<group>"; };
+		343E87661F95B06C007AF94F /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		343E87691F95B0CA007AF94F /* XMPPNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMPPNavigationController.swift; sourceTree = "<group>"; };
+		343E876A1F95B0CA007AF94F /* XMPPTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMPPTabBarController.swift; sourceTree = "<group>"; };
+		343E876E1F95B141007AF94F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
+		343E87721F95CE5F007AF94F /* ChatInputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatInputView.swift; sourceTree = "<group>"; };
+		343E87741F95DB1D007AF94F /* ChatInputViewManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatInputViewManager.swift; sourceTree = "<group>"; };
+		34643F2A1F8DE9FD00F58FE0 /* XMPP_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XMPP_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		34643F321F8DE9FD00F58FE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		34643F341F8DE9FD00F58FE0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
+		34643F371F8DE9FD00F58FE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		34643F3E1F8DE9FD00F58FE0 /* XMPP_iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XMPP_iOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		34643F421F8DE9FD00F58FE0 /* XMPP_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMPP_iOSTests.swift; sourceTree = "<group>"; };
+		34643F441F8DE9FD00F58FE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34643F491F8DE9FD00F58FE0 /* XMPP_iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XMPP_iOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		34643F4D1F8DE9FD00F58FE0 /* XMPP_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMPP_iOSUITests.swift; sourceTree = "<group>"; };
+		34643F4F1F8DE9FD00F58FE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34643F641F8E060F00F58FE0 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		34643F651F8E060F00F58FE0 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		34643F681F8E061E00F58FE0 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		34643F691F8E061E00F58FE0 /* RegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
+		34643F6D1F8E0B8900F58FE0 /* XMPPConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMPPConfig.swift; sourceTree = "<group>"; };
+		34643F6E1F8E0B8900F58FE0 /* XMPPManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMPPManager.swift; sourceTree = "<group>"; };
+		34659B321F975C710060E34C /* AddFriendsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddFriendsViewController.swift; sourceTree = "<group>"; };
+		34659B351F9760CD0060E34C /* AddFriendsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddFriendsTableViewCell.swift; sourceTree = "<group>"; };
+		346853921F99A17D0060C6FC /* NewFriendsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewFriendsViewController.swift; sourceTree = "<group>"; };
+		346853941F99A33F0060C6FC /* NewFriendsTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewFriendsTableView.swift; sourceTree = "<group>"; };
+		346853961F99A5B00060C6FC /* NewFriendsSection2TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewFriendsSection2TableViewCell.swift; sourceTree = "<group>"; };
+		346853981F99AC370060C6FC /* NewFriendsSection1TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewFriendsSection1TableViewCell.swift; sourceTree = "<group>"; };
+		3468539A1F99DC930060C6FC /* MeTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeTableView.swift; sourceTree = "<group>"; };
+		3468539C1F99DE700060C6FC /* MeSection0TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeSection0TableViewCell.swift; sourceTree = "<group>"; };
+		3468539E1F99E0430060C6FC /* MeOtherTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeOtherTableViewCell.swift; sourceTree = "<group>"; };
+		346853A11F99E0FB0060C6FC /* MeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeModel.swift; sourceTree = "<group>"; };
+		346853A31F99FE4F0060C6FC /* DiscoverTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverTableView.swift; sourceTree = "<group>"; };
+		346853A51F9A00820060C6FC /* DiscoverTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverTableViewCell.swift; sourceTree = "<group>"; };
+		346853A81F9A08460060C6FC /* DiscoverModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverModel.swift; sourceTree = "<group>"; };
+		347771031F96F62B00654A42 /* ChatModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatModel.swift; sourceTree = "<group>"; };
+		34991E551F8F3931000F22D8 /* FriendsListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsListViewController.swift; sourceTree = "<group>"; };
+		34991E571F8F3960000F22D8 /* FriendsListTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsListTableView.swift; sourceTree = "<group>"; };
+		34991E591F8F3B34000F22D8 /* FriendsListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsListTableViewCell.swift; sourceTree = "<group>"; };
+		34E9C9CB1F944BC700D05B8B /* XMPPConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMPPConstant.swift; sourceTree = "<group>"; };
+		34E9C9CD1F94505D00D05B8B /* UIView+Frame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Frame.swift"; sourceTree = "<group>"; };
+		34E9C9CF1F9458A700D05B8B /* ChooseRootControllerHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseRootControllerHelper.swift; sourceTree = "<group>"; };
+		34E9C9D81F945B6900D05B8B /* ChatListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatListViewController.swift; sourceTree = "<group>"; };
+		34E9C9E11F94604300D05B8B /* DiscoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
+		34E9C9E31F94605900D05B8B /* MeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeViewController.swift; sourceTree = "<group>"; };
+		34E9C9E61F946AE700D05B8B /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		34E9C9EB1F94A48900D05B8B /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		34E9C9ED1F94C72800D05B8B /* ChatTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatTableView.swift; sourceTree = "<group>"; };
+		34E9C9EF1F94C74900D05B8B /* ChatLeftTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatLeftTableViewCell.swift; sourceTree = "<group>"; };
+		34E9C9F11F94C75C00D05B8B /* ChatRightTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatRightTableViewCell.swift; sourceTree = "<group>"; };
+		369D638DC7CC7E7CEEB408E0 /* Pods-XMPP_iOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XMPP_iOSUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-XMPP_iOSUITests/Pods-XMPP_iOSUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9D11258B604827846B5E4F71 /* Pods_XMPP_iOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XMPP_iOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2C35B218ADB4E94FE8E87C9 /* Pods-XMPP_iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XMPP_iOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-XMPP_iOSTests/Pods-XMPP_iOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		DF6C75DE0F321BFB82163122 /* Pods_XMPP_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XMPP_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		34643F271F8DE9FD00F58FE0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEE23DAF04BA4BF514E6ACD7 /* Pods_XMPP_iOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34643F3B1F8DE9FD00F58FE0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A685C53740ACC90D3C5BF47E /* Pods_XMPP_iOSTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34643F461F8DE9FD00F58FE0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A0CBBE4845D3BBEFADD94C8 /* Pods_XMPP_iOSUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0C633BEED2ABB530242897FD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DF6C75DE0F321BFB82163122 /* Pods_XMPP_iOS.framework */,
+				0F504C24A36DCFEA829795DB /* Pods_XMPP_iOSTests.framework */,
+				9D11258B604827846B5E4F71 /* Pods_XMPP_iOSUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		10A3DCAF942E52A23E73E096 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0B6CB96E57323DD4794084D1 /* Pods-XMPP_iOS.debug.xcconfig */,
+				1AED69CE080143F711215A8B /* Pods-XMPP_iOS.release.xcconfig */,
+				1E984883DD82B0BD7A3E9C19 /* Pods-XMPP_iOSTests.debug.xcconfig */,
+				A2C35B218ADB4E94FE8E87C9 /* Pods-XMPP_iOSTests.release.xcconfig */,
+				0E74BADBF366774A0A23A058 /* Pods-XMPP_iOSUITests.debug.xcconfig */,
+				369D638DC7CC7E7CEEB408E0 /* Pods-XMPP_iOSUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		34344A331F9DA71500F3CD21 /* Setting(设置) */ = {
+			isa = PBXGroup;
+			children = (
+				34344A341F9DA71500F3CD21 /* Controller */,
+				34344A351F9DA71500F3CD21 /* View */,
+			);
+			name = "Setting(设置)";
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		34344A341F9DA71500F3CD21 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				34344A361F9DA75200F3CD21 /* SettingViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		34344A351F9DA71500F3CD21 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				34344A381F9DBE6200F3CD21 /* SettingTableView.swift */,
+				34344A3A1F9DBFB600F3CD21 /* SettingTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		343E87651F95B03E007AF94F /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				343E87661F95B06C007AF94F /* AppDelegate.swift */,
+				343E87691F95B0CA007AF94F /* XMPPNavigationController.swift */,
+				343E876A1F95B0CA007AF94F /* XMPPTabBarController.swift */,
+				343E876E1F95B141007AF94F /* Info.plist */,
+				34643F311F8DE9FD00F58FE0 /* Main.storyboard */,
+				34643F341F8DE9FD00F58FE0 /* Assets.xcassets */,
+				34643F361F8DE9FD00F58FE0 /* LaunchScreen.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		34643F211F8DE9FD00F58FE0 = {
+			isa = PBXGroup;
+			children = (
+				34643F2C1F8DE9FD00F58FE0 /* XMPP_iOS */,
+				34643F411F8DE9FD00F58FE0 /* XMPP_iOSTests */,
+				34643F4C1F8DE9FD00F58FE0 /* XMPP_iOSUITests */,
+				34643F2B1F8DE9FD00F58FE0 /* Products */,
+				10A3DCAF942E52A23E73E096 /* Pods */,
+				0C633BEED2ABB530242897FD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		34643F2B1F8DE9FD00F58FE0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				34643F2A1F8DE9FD00F58FE0 /* XMPP_iOS.app */,
+				34643F3E1F8DE9FD00F58FE0 /* XMPP_iOSTests.xctest */,
+				34643F491F8DE9FD00F58FE0 /* XMPP_iOSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		34643F2C1F8DE9FD00F58FE0 /* XMPP_iOS */ = {
+			isa = PBXGroup;
+			children = (
+				34E9C9CA1F944B8D00D05B8B /* Tools(工具类) */,
+				34643F6C1F8E0B7100F58FE0 /* XMPPManager(管理类) */,
+				34643F5F1F8E051E00F58FE0 /* Login_Register(登录|注册) */,
+				34991E501F8F38B5000F22D8 /* FriendsList(通讯录) */,
+				34E9C9DB1F945FC100D05B8B /* Discover(发现) */,
+				34E9C9DE1F945FC100D05B8B /* Me(我） */,
+				34E9C9D51F945B4500D05B8B /* ChatList(微信) */,
+				343E87651F95B03E007AF94F /* Main */,
+			);
+			path = XMPP_iOS;
+			sourceTree = "<group>";
+		};
+		34643F411F8DE9FD00F58FE0 /* XMPP_iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				34643F421F8DE9FD00F58FE0 /* XMPP_iOSTests.swift */,
+				34643F441F8DE9FD00F58FE0 /* Info.plist */,
+			);
+			path = XMPP_iOSTests;
+			sourceTree = "<group>";
+		};
+		34643F4C1F8DE9FD00F58FE0 /* XMPP_iOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				34643F4D1F8DE9FD00F58FE0 /* XMPP_iOSUITests.swift */,
+				34643F4F1F8DE9FD00F58FE0 /* Info.plist */,
+			);
+			path = XMPP_iOSUITests;
+			sourceTree = "<group>";
+		};
+		34643F5F1F8E051E00F58FE0 /* Login_Register(登录|注册) */ = {
+			isa = PBXGroup;
+			children = (
+				34643F601F8E055F00F58FE0 /* LoginMoudlar(登录) */,
+				34643F611F8E055F00F58FE0 /* RegisterMoudlar(注册) */,
+			);
+			name = "Login_Register(登录|注册)";
+			path = Login_Register;
+			sourceTree = "<group>";
+		};
+		34643F601F8E055F00F58FE0 /* LoginMoudlar(登录) */ = {
+			isa = PBXGroup;
+			children = (
+				34643F621F8E05B900F58FE0 /* Controller */,
+			);
+			name = "LoginMoudlar(登录)";
+			path = RegisterModular;
+			sourceTree = "<group>";
+		};
+		34643F611F8E055F00F58FE0 /* RegisterMoudlar(注册) */ = {
+			isa = PBXGroup;
+			children = (
+				34643F631F8E05BF00F58FE0 /* Controller */,
+			);
+			name = "RegisterMoudlar(注册)";
+			path = LoginMoudlar;
+			sourceTree = "<group>";
+		};
+		34643F621F8E05B900F58FE0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				34643F641F8E060F00F58FE0 /* LoginViewController.swift */,
+				34643F651F8E060F00F58FE0 /* LoginViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		34643F631F8E05BF00F58FE0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				34643F681F8E061E00F58FE0 /* RegisterViewController.swift */,
+				34643F691F8E061E00F58FE0 /* RegisterViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		34643F6C1F8E0B7100F58FE0 /* XMPPManager(管理类) */ = {
+			isa = PBXGroup;
+			children = (
+				34643F6D1F8E0B8900F58FE0 /* XMPPConfig.swift */,
+				34643F6E1F8E0B8900F58FE0 /* XMPPManager.swift */,
+			);
+			name = "XMPPManager(管理类)";
+			path = XMPPManager;
+			sourceTree = "<group>";
+		};
+		34659B2F1F975C4D0060E34C /* AddFriends(添加朋友) */ = {
+			isa = PBXGroup;
+			children = (
+				34659B301F975C4D0060E34C /* Controller */,
+				34659B311F975C4D0060E34C /* View */,
+			);
+			name = "AddFriends(添加朋友)";
+			path = AddFriends;
+			sourceTree = "<group>";
+		};
+		34659B301F975C4D0060E34C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				34659B321F975C710060E34C /* AddFriendsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		34659B311F975C4D0060E34C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				34659B351F9760CD0060E34C /* AddFriendsTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3468538F1F99A14F0060C6FC /* NewFriends(新的朋友) */ = {
+			isa = PBXGroup;
+			children = (
+				346853901F99A14F0060C6FC /* Controller */,
+				346853911F99A14F0060C6FC /* View */,
+			);
+			name = "NewFriends(新的朋友)";
+			path = NewFriends;
+			sourceTree = "<group>";
+		};
+		346853901F99A14F0060C6FC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				346853921F99A17D0060C6FC /* NewFriendsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		346853911F99A14F0060C6FC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				346853941F99A33F0060C6FC /* NewFriendsTableView.swift */,
+				346853961F99A5B00060C6FC /* NewFriendsSection2TableViewCell.swift */,
+				346853981F99AC370060C6FC /* NewFriendsSection1TableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		346853A01F99E0E00060C6FC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				346853A11F99E0FB0060C6FC /* MeModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		346853A71F9A082B0060C6FC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				346853A81F9A08460060C6FC /* DiscoverModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		347771021F96F60500654A42 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				347771031F96F62B00654A42 /* ChatModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		34991E501F8F38B5000F22D8 /* FriendsList(通讯录) */ = {
+			isa = PBXGroup;
+			children = (
+				34659B2F1F975C4D0060E34C /* AddFriends(添加朋友) */,
+				3468538F1F99A14F0060C6FC /* NewFriends(新的朋友) */,
+				34E9C9E81F94A43100D05B8B /* Chat(聊天模块) */,
+				34991E531F8F3931000F22D8 /* View */,
+				34991E541F8F3931000F22D8 /* Controller */,
+			);
+			name = "FriendsList(通讯录)";
+			path = FriendsList;
+			sourceTree = "<group>";
+		};
+		34991E531F8F3931000F22D8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				34991E571F8F3960000F22D8 /* FriendsListTableView.swift */,
+				34991E591F8F3B34000F22D8 /* FriendsListTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		34991E541F8F3931000F22D8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				34991E551F8F3931000F22D8 /* FriendsListViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		34E9C9CA1F944B8D00D05B8B /* Tools(工具类) */ = {
+			isa = PBXGroup;
+			children = (
+				34E9C9CB1F944BC700D05B8B /* XMPPConstant.swift */,
+				34E9C9CD1F94505D00D05B8B /* UIView+Frame.swift */,
+				34E9C9E61F946AE700D05B8B /* UIColor+Extension.swift */,
+				34E9C9CF1F9458A700D05B8B /* ChooseRootControllerHelper.swift */,
+			);
+			name = "Tools(工具类)";
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		34E9C9D51F945B4500D05B8B /* ChatList(微信) */ = {
+			isa = PBXGroup;
+			children = (
+				34E9C9D61F945B4500D05B8B /* Controller */,
+				34E9C9D71F945B4500D05B8B /* View */,
+			);
+			name = "ChatList(微信)";
+			path = ChatList;
+			sourceTree = "<group>";
+		};
+		34E9C9D61F945B4500D05B8B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				34E9C9D81F945B6900D05B8B /* ChatListViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		34E9C9D71F945B4500D05B8B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		34E9C9DB1F945FC100D05B8B /* Discover(发现) */ = {
+			isa = PBXGroup;
+			children = (
+				346853A71F9A082B0060C6FC /* Model */,
+				34E9C9DC1F945FC100D05B8B /* Controller */,
+				34E9C9DD1F945FC100D05B8B /* View */,
+			);
+			name = "Discover(发现)";
+			path = Discover;
+			sourceTree = "<group>";
+		};
+		34E9C9DC1F945FC100D05B8B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				34E9C9E11F94604300D05B8B /* DiscoverViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		34E9C9DD1F945FC100D05B8B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				346853A31F99FE4F0060C6FC /* DiscoverTableView.swift */,
+				346853A51F9A00820060C6FC /* DiscoverTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		34E9C9DE1F945FC100D05B8B /* Me(我） */ = {
+			isa = PBXGroup;
+			children = (
+				34344A331F9DA71500F3CD21 /* Setting(设置) */,
+				346853A01F99E0E00060C6FC /* Model */,
+				34E9C9DF1F945FC100D05B8B /* Controller */,
+				34E9C9E01F945FC100D05B8B /* View */,
+			);
+			name = "Me(我）";
+			path = Me;
+			sourceTree = "<group>";
+		};
+		34E9C9DF1F945FC100D05B8B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				34E9C9E31F94605900D05B8B /* MeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		34E9C9E01F945FC100D05B8B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3468539A1F99DC930060C6FC /* MeTableView.swift */,
+				3468539C1F99DE700060C6FC /* MeSection0TableViewCell.swift */,
+				3468539E1F99E0430060C6FC /* MeOtherTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		34E9C9E81F94A43100D05B8B /* Chat(聊天模块) */ = {
+			isa = PBXGroup;
+			children = (
+				347771021F96F60500654A42 /* Model */,
+				34E9C9E91F94A44A00D05B8B /* View */,
+				34E9C9EA1F94A44A00D05B8B /* Controller */,
+			);
+			name = "Chat(聊天模块)";
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		34E9C9E91F94A44A00D05B8B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				34E9C9ED1F94C72800D05B8B /* ChatTableView.swift */,
+				34E9C9EF1F94C74900D05B8B /* ChatLeftTableViewCell.swift */,
+				34E9C9F11F94C75C00D05B8B /* ChatRightTableViewCell.swift */,
+				343E87721F95CE5F007AF94F /* ChatInputView.swift */,
+				343E87741F95DB1D007AF94F /* ChatInputViewManager.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		34E9C9EA1F94A44A00D05B8B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				34E9C9EB1F94A48900D05B8B /* ChatViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		34643F291F8DE9FD00F58FE0 /* XMPP_iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 34643F521F8DE9FD00F58FE0 /* Build configuration list for PBXNativeTarget "XMPP_iOS" */;
+			buildPhases = (
+				608BED4C0C43D02FE200F9AC /* [CP] Check Pods Manifest.lock */,
+				34643F261F8DE9FD00F58FE0 /* Sources */,
+				34643F271F8DE9FD00F58FE0 /* Frameworks */,
+				34643F281F8DE9FD00F58FE0 /* Resources */,
+				340EAF3FF4F879BE5824E6B2 /* [CP] Embed Pods Frameworks */,
+				5D28D8F8361D1A7C6FC5A8DB /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XMPP_iOS;
+			productName = XMPP_iOS;
+			productReference = 34643F2A1F8DE9FD00F58FE0 /* XMPP_iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		34643F3D1F8DE9FD00F58FE0 /* XMPP_iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 34643F551F8DE9FD00F58FE0 /* Build configuration list for PBXNativeTarget "XMPP_iOSTests" */;
+			buildPhases = (
+				D9A32B3EB53F879D0C7AE340 /* [CP] Check Pods Manifest.lock */,
+				34643F3A1F8DE9FD00F58FE0 /* Sources */,
+				34643F3B1F8DE9FD00F58FE0 /* Frameworks */,
+				34643F3C1F8DE9FD00F58FE0 /* Resources */,
+				BFC2A28FE61DF0A0D10D1FDB /* [CP] Embed Pods Frameworks */,
+				47595F86BA4B9F12C89988E2 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				34643F401F8DE9FD00F58FE0 /* PBXTargetDependency */,
+			);
+			name = XMPP_iOSTests;
+			productName = XMPP_iOSTests;
+			productReference = 34643F3E1F8DE9FD00F58FE0 /* XMPP_iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		34643F481F8DE9FD00F58FE0 /* XMPP_iOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 34643F581F8DE9FD00F58FE0 /* Build configuration list for PBXNativeTarget "XMPP_iOSUITests" */;
+			buildPhases = (
+				A09F76240134B1D0371EA781 /* [CP] Check Pods Manifest.lock */,
+				34643F451F8DE9FD00F58FE0 /* Sources */,
+				34643F461F8DE9FD00F58FE0 /* Frameworks */,
+				34643F471F8DE9FD00F58FE0 /* Resources */,
+				C27A1248F09697105EA51E1F /* [CP] Embed Pods Frameworks */,
+				32052C227C03D6CCBFEFA29A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				34643F4B1F8DE9FD00F58FE0 /* PBXTargetDependency */,
+			);
+			name = XMPP_iOSUITests;
+			productName = XMPP_iOSUITests;
+			productReference = 34643F491F8DE9FD00F58FE0 /* XMPP_iOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		34643F221F8DE9FD00F58FE0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = AnswerXu;
+				TargetAttributes = {
+					34643F291F8DE9FD00F58FE0 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = Y4CJ7KR8N3;
+						ProvisioningStyle = Automatic;
+					};
+					34643F3D1F8DE9FD00F58FE0 = {
+						CreatedOnToolsVersion = 8.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 34643F291F8DE9FD00F58FE0;
+					};
+					34643F481F8DE9FD00F58FE0 = {
+						CreatedOnToolsVersion = 8.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 34643F291F8DE9FD00F58FE0;
+					};
+				};
+			};
+			buildConfigurationList = 34643F251F8DE9FD00F58FE0 /* Build configuration list for PBXProject "XMPP_iOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 34643F211F8DE9FD00F58FE0;
+			productRefGroup = 34643F2B1F8DE9FD00F58FE0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				34643F291F8DE9FD00F58FE0 /* XMPP_iOS */,
+				34643F3D1F8DE9FD00F58FE0 /* XMPP_iOSTests */,
+				34643F481F8DE9FD00F58FE0 /* XMPP_iOSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		34643F281F8DE9FD00F58FE0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34643F671F8E060F00F58FE0 /* LoginViewController.xib in Resources */,
+				34643F6B1F8E061E00F58FE0 /* RegisterViewController.xib in Resources */,
+				343E876F1F95B141007AF94F /* Info.plist in Resources */,
+				34643F381F8DE9FD00F58FE0 /* LaunchScreen.storyboard in Resources */,
+				34643F351F8DE9FD00F58FE0 /* Assets.xcassets in Resources */,
+				34643F331F8DE9FD00F58FE0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34643F3C1F8DE9FD00F58FE0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34643F471F8DE9FD00F58FE0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		32052C227C03D6CCBFEFA29A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XMPP_iOSUITests/Pods-XMPP_iOSUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		340EAF3FF4F879BE5824E6B2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-XMPP_iOS/Pods-XMPP_iOS-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CocoaAsyncSocket/CocoaAsyncSocket.framework",
+				"${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework",
+				"${BUILT_PRODUCTS_DIR}/KissXML/KissXML.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/XMPPFramework/XMPPFramework.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaAsyncSocket.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaLumberjack.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KissXML.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XMPPFramework.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XMPP_iOS/Pods-XMPP_iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		47595F86BA4B9F12C89988E2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XMPP_iOSTests/Pods-XMPP_iOSTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5D28D8F8361D1A7C6FC5A8DB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XMPP_iOS/Pods-XMPP_iOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		608BED4C0C43D02FE200F9AC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-XMPP_iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A09F76240134B1D0371EA781 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-XMPP_iOSUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BFC2A28FE61DF0A0D10D1FDB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XMPP_iOSTests/Pods-XMPP_iOSTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C27A1248F09697105EA51E1F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XMPP_iOSUITests/Pods-XMPP_iOSUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D9A32B3EB53F879D0C7AE340 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-XMPP_iOSTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		34643F261F8DE9FD00F58FE0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				343E876C1F95B0CA007AF94F /* XMPPNavigationController.swift in Sources */,
+				343E87671F95B06C007AF94F /* AppDelegate.swift in Sources */,
+				34E9C9F01F94C74900D05B8B /* ChatLeftTableViewCell.swift in Sources */,
+				346853A91F9A08460060C6FC /* DiscoverModel.swift in Sources */,
+				34E9C9E41F94605900D05B8B /* MeViewController.swift in Sources */,
+				34643F6A1F8E061E00F58FE0 /* RegisterViewController.swift in Sources */,
+				34344A3B1F9DBFB600F3CD21 /* SettingTableViewCell.swift in Sources */,
+				34E9C9E71F946AE700D05B8B /* UIColor+Extension.swift in Sources */,
+				34643F661F8E060F00F58FE0 /* LoginViewController.swift in Sources */,
+				34E9C9D91F945B6900D05B8B /* ChatListViewController.swift in Sources */,
+				3468539F1F99E0430060C6FC /* MeOtherTableViewCell.swift in Sources */,
+				346853A41F99FE4F0060C6FC /* DiscoverTableView.swift in Sources */,
+				34991E5A1F8F3B34000F22D8 /* FriendsListTableViewCell.swift in Sources */,
+				34659B361F9760CD0060E34C /* AddFriendsTableViewCell.swift in Sources */,
+				34E9C9D01F9458A700D05B8B /* ChooseRootControllerHelper.swift in Sources */,
+				34643F6F1F8E0B8900F58FE0 /* XMPPConfig.swift in Sources */,
+				347771041F96F62B00654A42 /* ChatModel.swift in Sources */,
+				34E9C9F21F94C75C00D05B8B /* ChatRightTableViewCell.swift in Sources */,
+				34E9C9CC1F944BC700D05B8B /* XMPPConstant.swift in Sources */,
+				343E876D1F95B0CA007AF94F /* XMPPTabBarController.swift in Sources */,
+				346853971F99A5B00060C6FC /* NewFriendsSection2TableViewCell.swift in Sources */,
+				343E87751F95DB1D007AF94F /* ChatInputViewManager.swift in Sources */,
+				346853A61F9A00820060C6FC /* DiscoverTableViewCell.swift in Sources */,
+				346853A21F99E0FB0060C6FC /* MeModel.swift in Sources */,
+				3468539D1F99DE700060C6FC /* MeSection0TableViewCell.swift in Sources */,
+				346853931F99A17D0060C6FC /* NewFriendsViewController.swift in Sources */,
+				34E9C9E21F94604300D05B8B /* DiscoverViewController.swift in Sources */,
+				346853991F99AC370060C6FC /* NewFriendsSection1TableViewCell.swift in Sources */,
+				34E9C9CE1F94505D00D05B8B /* UIView+Frame.swift in Sources */,
+				34991E561F8F3931000F22D8 /* FriendsListViewController.swift in Sources */,
+				343E87731F95CE5F007AF94F /* ChatInputView.swift in Sources */,
+				34991E581F8F3960000F22D8 /* FriendsListTableView.swift in Sources */,
+				34659B331F975C720060E34C /* AddFriendsViewController.swift in Sources */,
+				34344A391F9DBE6200F3CD21 /* SettingTableView.swift in Sources */,
+				346853951F99A33F0060C6FC /* NewFriendsTableView.swift in Sources */,
+				34E9C9EE1F94C72800D05B8B /* ChatTableView.swift in Sources */,
+				3468539B1F99DC930060C6FC /* MeTableView.swift in Sources */,
+				34344A371F9DA75200F3CD21 /* SettingViewController.swift in Sources */,
+				34E9C9EC1F94A48900D05B8B /* ChatViewController.swift in Sources */,
+				34643F701F8E0B8900F58FE0 /* XMPPManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34643F3A1F8DE9FD00F58FE0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34643F431F8DE9FD00F58FE0 /* XMPP_iOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34643F451F8DE9FD00F58FE0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34643F4E1F8DE9FD00F58FE0 /* XMPP_iOSUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		34643F401F8DE9FD00F58FE0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 34643F291F8DE9FD00F58FE0 /* XMPP_iOS */;
+			targetProxy = 34643F3F1F8DE9FD00F58FE0 /* PBXContainerItemProxy */;
+		};
+		34643F4B1F8DE9FD00F58FE0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 34643F291F8DE9FD00F58FE0 /* XMPP_iOS */;
+			targetProxy = 34643F4A1F8DE9FD00F58FE0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		34643F311F8DE9FD00F58FE0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				34643F321F8DE9FD00F58FE0 /* Base */,
+			);
+			name = Main.storyboard;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		34643F361F8DE9FD00F58FE0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				34643F371F8DE9FD00F58FE0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			path = ..;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		34643F501F8DE9FD00F58FE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		34643F511F8DE9FD00F58FE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		34643F531F8DE9FD00F58FE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B6CB96E57323DD4794084D1 /* Pods-XMPP_iOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Y4CJ7KR8N3;
+				ENABLE_BITCODE = NO;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/XMPP_iOS/XMPP_iOS/Main/XMPP_iOS.pch";
+				INFOPLIST_FILE = XMPP_iOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "AnswerXu.XMPP-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		34643F541F8DE9FD00F58FE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1AED69CE080143F711215A8B /* Pods-XMPP_iOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Y4CJ7KR8N3;
+				ENABLE_BITCODE = NO;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/XMPP_iOS/XMPP_iOS/Main/XMPP_iOS.pch";
+				INFOPLIST_FILE = XMPP_iOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "AnswerXu.XMPP-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		34643F561F8DE9FD00F58FE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E984883DD82B0BD7A3E9C19 /* Pods-XMPP_iOSTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = XMPP_iOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "AnswerXu.XMPP-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XMPP_iOS.app/XMPP_iOS";
+			};
+			name = Debug;
+		};
+		34643F571F8DE9FD00F58FE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2C35B218ADB4E94FE8E87C9 /* Pods-XMPP_iOSTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = XMPP_iOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "AnswerXu.XMPP-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XMPP_iOS.app/XMPP_iOS";
+			};
+			name = Release;
+		};
+		34643F591F8DE9FD00F58FE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E74BADBF366774A0A23A058 /* Pods-XMPP_iOSUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = XMPP_iOSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "AnswerXu.XMPP-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = XMPP_iOS;
+			};
+			name = Debug;
+		};
+		34643F5A1F8DE9FD00F58FE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 369D638DC7CC7E7CEEB408E0 /* Pods-XMPP_iOSUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = XMPP_iOSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "AnswerXu.XMPP-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = XMPP_iOS;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		34643F251F8DE9FD00F58FE0 /* Build configuration list for PBXProject "XMPP_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34643F501F8DE9FD00F58FE0 /* Debug */,
+				34643F511F8DE9FD00F58FE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		34643F521F8DE9FD00F58FE0 /* Build configuration list for PBXNativeTarget "XMPP_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34643F531F8DE9FD00F58FE0 /* Debug */,
+				34643F541F8DE9FD00F58FE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		34643F551F8DE9FD00F58FE0 /* Build configuration list for PBXNativeTarget "XMPP_iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34643F561F8DE9FD00F58FE0 /* Debug */,
+				34643F571F8DE9FD00F58FE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		34643F581F8DE9FD00F58FE0 /* Build configuration list for PBXNativeTarget "XMPP_iOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34643F591F8DE9FD00F58FE0 /* Debug */,
+				34643F5A1F8DE9FD00F58FE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 34643F221F8DE9FD00F58FE0 /* Project object */;
+}
